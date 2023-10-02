@@ -50,6 +50,10 @@ document.getElementById('btn-calculate-rectangle').addEventListener('click',func
     const recW =  getInputFieldValueById('w-rec');
     const recL =  getInputFieldValueById('l-rec');
     const area = recL * recW;
+    if(isNaN(recW && recL)){
+        alert('Enter a Valid Number');
+        return;
+    }
     addToCalculationEntry('Rectangle',area);
 })
 
@@ -58,6 +62,10 @@ document.getElementById('btn-calculate-parallelogram').addEventListener('click',
     const paraB =  getInputFieldValueById('b-para');
     const paraH =  getInputFieldValueById('h-para');
     const area = 0.5 * paraB * paraH;
+    if(isNaN(paraB && paraH)){
+        alert('Enter a Valid Number');
+        return;
+    }
     addToCalculationEntry('Parallelogram',area);
 
 })
@@ -67,6 +75,10 @@ document.getElementById('btn-calculate-rhombus').addEventListener('click',functi
     const rombD1 =  getInputFieldValueById('d1-romb');
     const rombD2 =  getInputFieldValueById('d2-romb');
     const area = 0.5 * rombD1 * rombD2;
+    if(isNaN(rombD1 && rombD2)){
+        alert('Enter a Valid Number');
+        return;
+    }
     addToCalculationEntry('Rhombus',area);
 
 })
@@ -76,6 +88,10 @@ document.getElementById('btn-calculate-pentagon').addEventListener('click',funct
     const pentP =  getInputFieldValueById('p-pent');
     const pentB =  getInputFieldValueById('b-pent');
     const area = 0.5 * pentP * pentB;
+    if(isNaN(pentP && pentB)){
+        alert('Enter a Valid Number');
+        return;
+    }
     addToCalculationEntry('Pentagon',area);
 
 })
@@ -85,6 +101,10 @@ document.getElementById('btn-calculate-ellipse').addEventListener('click',functi
     const elipA =  getInputFieldValueById('a-elip');
     const elipB =  getInputFieldValueById('b-elip');
     const area = 3.14 * elipA * elipB;
+    if(isNaN(elipA && elipB)){
+        alert('Enter a Valid Number');
+        return;
+    }
     addToCalculationEntry('Ellipse',area);
 
 })
