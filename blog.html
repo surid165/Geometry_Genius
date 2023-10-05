@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="text-center">
-    <h2 class="text-2xl">My Blog</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis facere cumque nisi fugit blanditiis obcaecati ut, architecto, repellat, doloribus necessitatibus vitae quo? Quam odit reiciendis nulla reprehenderit sit repudiandae consectetur deserunt dolor ex magnam voluptatem laudantium soluta officia quisquam deleniti earum, neque commodi dolorum fuga recusandae! Corporis iste hic placeat!</p>
-    </div>
+    <header class="container mx-auto mt-5">
+        <h2 class="text-3xl text-center font-bold bg-yellow-400 p-4">Blog Article of DOM in JS</h2>
+    </header>
+    <section class="container mx-auto mt-7">
+        <div>
+            <h2 class="font-bold text-xl">1.DOM & Its Purpose</h2>
+            <p>DOM stands for Document Object Model.DOM is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.The purpose of DOM is to provide a way to interact and manipulate web pages Dynamically.</p>
+            <br>
+            <h2 class="font-bold text-xl">2.How to select elements from DOM</h2>
+            <p>The most common methods to select elements is to use "document" and the method name.
+            <br>
+            <b>1. getElementById:</b>  This method is used to select an element by its unique id attribute. <br>
+            <b>2. getElementsByClassName:</b> This method is used to select elements by their class names. It returns a array-like of elements with the specified class.
+            <br>
+            <b>3. getElementsByTagName:</b> This method selects elements by their HTML tag name and returns a collection of elements.
+            <br>
+            <b>4. querySelector:</b> This method selects element using CSS-style selectors. It returns the first matching element.
+            </p>
+            <br>
+            <h2 class="font-bold text-xl">3.Event Bubble</h2>
+            <p>Event bubbling is a technique by which when an event is triggered on a nested element it bubbles up through the parent nodes in the DOM tree, it calls the event handlers on those parent elements in turn.</p>
+            <br>
+            <h2 class="font-bold text-xl">4.Callback Function</h2>
+            <p>A callback function is a function that is passed as an argument to another function.It is executed after the completion of that function. Callback functions are commonly used in JavaScript and other programming languages for various purposes. They are essential in Asynchronous programming,event handling,Error handling, and many other cases.
+            </p>
+
+        </div>
+    </section>
     
 </body>
 </html>
