@@ -27,11 +27,11 @@ document.getElementById('btn-calculate-triangle').addEventListener('click',funct
     const triangleB =  getInputFieldValueById('b-tri');
     const triangleH =  getInputFieldValueById('h-tri');
     const area = (0.5 * triangleB * triangleH).toFixed(2);;
-    if(typeof triangleB && triangleH !== 'number'){
+    if(typeof triangleB && triangleH == 'text'){
         alert('Enter a Valid Number');
         return;
     }
-    addToCalculationEntry('Triangle',area);   
+        addToCalculationEntry('Triangle',area);   
      
 })
 
@@ -40,7 +40,7 @@ document.getElementById('btn-calculate-rectangle').addEventListener('click',func
     const recW =  getInputFieldValueById('w-rec');
     const recL =  getInputFieldValueById('l-rec');
     const area = (recL * recW).toFixed(2);;
-    if(typeof recL && recW !== 'number'){
+    if(typeof recL && recW == 'text'){
         alert('Enter a Valid Number');
         return;
     }
@@ -52,7 +52,7 @@ document.getElementById('btn-calculate-parallelogram').addEventListener('click',
     const paraB =  getInputFieldValueById('b-para');
     const paraH =  getInputFieldValueById('h-para');
     const area = (0.5 * paraB * paraH).toFixed(2);;
-    if(typeof paraB && paraH !== 'number'){
+    if(typeof paraB && paraH == 'text'){
         alert('Enter a Valid Number');
         return;
     }
@@ -65,7 +65,7 @@ document.getElementById('btn-calculate-rhombus').addEventListener('click',functi
     const rombD1 =  getInputFieldValueById('d1-romb');
     const rombD2 =  getInputFieldValueById('d2-romb');
     const area = (0.5 * rombD1 * rombD2).toFixed(2);;
-    if(typeof rombD1 && rombD2 !== 'number'){
+    if(typeof rombD1 && rombD2 == 'text'){
         alert('Enter a Valid Number');
         return;
     }
@@ -78,7 +78,7 @@ document.getElementById('btn-calculate-pentagon').addEventListener('click',funct
     const pentP =  getInputFieldValueById('p-pent');
     const pentB =  getInputFieldValueById('b-pent');
     const area = (0.5 * pentP * pentB).toFixed(2);;
-    if(typeof pentP && pentB !== 'number'){
+    if(typeof pentP && pentB == 'text'){
         alert('Enter a Valid Number');
         return;
     }
@@ -91,7 +91,7 @@ document.getElementById('btn-calculate-ellipse').addEventListener('click',functi
     const elipA =  getInputFieldValueById('a-elip');
     const elipB =  getInputFieldValueById('b-elip');
     const area = (3.14 * elipA * elipB).toFixed(2);;
-    if(typeof elipA && elipB !== 'number'){
+    if(typeof elipA && elipB == 'text'){
         alert('Enter a Valid Number');
         return;
     }
